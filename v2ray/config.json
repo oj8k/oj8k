@@ -1,0 +1,327 @@
+{
+ "outbound": {
+  "streamSettings": {
+   "network": "tcp", 
+   "tcpSettings": {
+    "header": {
+     "type": "http", 
+     "request": {
+      "path": [
+       "/"
+      ], 
+      "version": "1.1", 
+      "method": "GET", 
+      "headers": {
+       "Host": "wx.qlogo.cn", 
+       "User-Agent": [
+        "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36", 
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/53.0.2785.109 Mobile/14A456 Safari/601.1.46"
+       ], 
+       "Connection": [
+        "keep-alive"
+       ], 
+       "Pragma": "no-cache", 
+       "Accept-Encoding": [
+        "gzip, deflate"
+       ]
+      }
+     }, 
+     "response": {
+      "status": "200", 
+      "headers": {
+       "Transfer-Encoding": [
+        "chunked"
+       ], 
+       "Connection": [
+        "keep-alive"
+       ], 
+       "Content-Type": [
+        "application/octet-stream", 
+        "video/mpeg"
+       ], 
+       "Pragma": "no-cache"
+      }, 
+      "reason": "OK", 
+      "version": "1.1"
+     }
+    }, 
+    "connectionReuse": true
+   }, 
+   "tlsSettings": {}, 
+   "security": ""
+  }, 
+  "tag": "Rong-V2ray", 
+  "protocol": "vmess", 
+  "mux": {
+   "enabled": true
+  }, 
+  "settings": {
+   "vnext": [
+    {
+     "users": [
+      {
+       "alterId": 100, 
+       "security": "chacha20-poly1305", 
+       "id": "94defdb4-409d-4bf9-8ba1-ea1b044496c6", 
+       "level": 1
+      }
+     ], 
+     "port": 80, 
+     "address": "35.200.69.85"
+    }
+   ]
+  }
+ }, 
+ "log": {
+  "access": "", 
+  "loglevel": "info", 
+  "error": ""
+ }, 
+ "outboundDetour": [
+  {
+   "tag": "direct", 
+   "protocol": "freedom", 
+   "settings": {
+   }
+  }, 
+  {
+   "tag": "blockout", 
+   "protocol": "blackhole", 
+   "settings": {
+    "response": {
+     "type": "http"
+    }
+   }
+  }
+ ], 
+ "inbound": {
+  "settings": {
+   "ip": "127.0.0.1", 
+   "udp": true, 
+   "auth": "noauth"
+  }, 
+  "protocol": "socks", 
+  "port": 1080, 
+  "listen": "0.0.0.0"
+ }, 
+ "inboundDetour": [
+ {
+  "domainOverride": ["tls","http"],
+  "protocol": "dokodemo-door",
+  "tag": "Rong-V2ray",
+  "settings": {
+  "network": "tcp,udp",
+  "followRedirect": true
+   },
+  "port": 65080
+   }
+ ],
+ "routing": {
+  "settings": {
+   "rules": [
+    {
+     "ip": [
+      "0.0.0.0/8", 
+      "10.0.0.0/8", 
+      "100.64.0.0/10", 
+      "127.0.0.0/8", 
+      "169.254.0.0/16", 
+      "172.16.0.0/12", 
+      "192.0.0.0/24", 
+      "192.0.2.0/24", 
+      "192.168.0.0/16", 
+      "198.18.0.0/15", 
+      "198.51.100.0/24", 
+      "203.0.113.0/24", 
+      "::1/128", 
+      "fc00::/7", 
+      "fe80::/10"
+     ], 
+     "type": "field", 
+     "outboundTag": "direct"
+    },
+    {
+     "domain": [
+      "3g.music.qq.com",
+      "a.play.api.3g.youku.com",
+      "ac.qq.com",
+      "acc.music.qq.com",
+      "access.tv.sohu.com",
+      "aid.video.qq.com",
+      "aidbak.video.qq.com",
+      "antiserver.kuwo.cn",
+      "api.3g.tudou.com",
+      "api.3g.youku.com",
+      "api.appsdk.soku.com",
+      "api.itv.letv.com",
+      "api.le.com",
+      "api.letv.com",
+      "api.live.letv.com",
+      "api.mob.app.letv.com",
+      "api.tv.itc.cn",
+      "api.tv.sohu.com",
+      "api.unipay.qq.com",
+      "api.www.letv.com",
+      "api.youku.com",
+      "app.bilibili.com",
+      "ark.letv.com",
+      "bangumi.bilibili.com",
+      "c.y.qq.com",
+      "cache.m.iqiyi.com",
+      "cache.video.iqiyi.com",
+      "cache.video.qiyi.com",
+      "cache.vip.iqiyi.com",
+      "cache.vip.qiyi.com",
+      "cctv1.vtime.cntv.cloudcdn.net",
+      "cctv13.vtime.cntv.cloudcdn.net",
+      "cctv5.vtime.cntv.cloudcdn.net",
+      "cctv5plus.vtime.cntv.cloudcdn.net",
+      "chrome.2345.com",
+      "client.api.ttpod.com",
+      "cloud.vip.xunlei.com",
+      "cupid.iqiyi.com",
+      "data.bilibili.com",
+      "data.video.iqiyi.com",
+      "data.video.qiyi.com",
+      "dispatcher.video.sina.com.cn",
+      "douban.fm",
+      "dpool.sina.com.cn",
+      "dyn.ugc.pps.tv",
+      "dynamic.app.m.letv.com",
+      "dynamic.cloud.vip.xunlei.com",
+      "dynamic.live.app.m.letv.com",
+      "dynamic.meizi.app.m.letv.com",
+      "dynamic.search.app.m.letv.com",
+      "epg.api.pptv.com",
+      "geo.js.kankan.com",
+      "hot.vrs.letv.com",
+      "hot.vrs.sohu.com",
+      "i-play.mobile.youku.com",
+      "i.play.api.3g.youku.com",
+      "i.y.qq.com",
+      "iface.iqiyi.com",
+      "iface2.iqiyi.com",
+      "info.zb.qq.com",
+      "info.zb.video.qq.com",
+      "inner.kandian.com",
+      "interface.bilibili.com",
+      "internal.check.duokanbox.com",
+      "ip.apps.cntv.cn",
+      "ip.kankan.com",
+      "ip.kugou.com",
+      "ip2.kugou.com",
+      "ipcheck.kuwo.cn",
+      "iplocation.geo.iqiyi.com",
+      "iplocation.geo.qiyi.com",
+      "ipservice.163.com",
+      "kandian.com",
+      "letv.cn",
+      "letv.com",
+      "list.youku.com",
+      "listso.m.areainfo.ppstream.com",
+      "live.api.hunantv.com",
+      "live.g3proxy.lecloud.com",
+      "live.gslb.letv.com",
+      "live.pptv.com",
+      "live.tv.sohu.com",
+      "lixian.vip.xunlei.com",
+      "lixian.xunlei.com",
+      "m.letv.com",
+      "m10.music.126.net",
+      "mobi.kuwo.cn",
+      "mobile.api.hunantv.com",
+      "mobilefeedback.kugou.com",
+      "mqqplayer.3g.qq.com",
+      "music.163.com",
+      "music.baidu.com",
+      "music.sina.com.cn",
+      "my.tv.sohu.com",
+      "nmobi.kuwo.cn",
+      "openapi.youku.com",
+      "pad.tv.sohu.com",
+      "pay.tudou.com",
+      "pay.video.qq.com",
+      "pay.youku.com",
+      "paybak.video.qq.com",
+      "pcweb.api.mgtv.com",
+      "pl-ali.youku.com",
+      "play-ali.youku.com",
+      "play-dxk.youku.com",
+      "play.api.3g.tudou.com",
+      "play.api.3g.youku.com",
+      "play.api.pptv.com",
+      "play.baidu.com",
+      "play.youku.com",
+      "player-pc.le.com",
+      "player.pc.le.com",
+      "proxy.music.qq.com",
+      "proxymc.qq.com",
+      "qzs.qq.com",
+      "s.plcloud.music.qq.com",
+      "search.api.3g.tudou.com",
+      "search.api.3g.youku.com",
+      "search.lekan.letv.com",
+      "serviceinfo.sdk.duomi.com",
+      "sns.video.qq.com",
+      "so.open.163.com",
+      "spark.api.xiami.com",
+      "sports1pull.live.wscdns.com",
+      "ssports.com",
+      "ssports.smgbb.cn",
+      "st.live.letv.com",
+      "static.api.sports.letv.com",
+      "static.itv.letv.com",
+      "tingapi.ting.baidu.com",
+      "tms.is.ysten.com",
+      "tools.aplusapi.pptv.com",
+      "tv.api.3g.tudou.com",
+      "tv.api.3g.youku.com",
+      "tv.weibo.com",
+      "ups.youku.com",
+      "v.api.hunantv.com",
+      "v.api.mgtv.com",
+      "v.iask.com",
+      "v.pps.tv",
+      "v.youku.com",
+      "v5.pc.duomi.com",
+      "vdn.apps.cntv.cn",
+      "vdn.live.cntv.cn",
+      "video.qq.com",
+      "video.sina.com.cn",
+      "video.tudou.com",
+      "vip.sports.cntv.cn",
+      "vxml.56.com",
+      "web-play.pplive.cn",
+      "web-play.pptv.com",
+      "wtv.v.iask.com",
+      "www.bilibili.com",
+      "www.iqiyi.com",
+      "www.kugou.com",
+      "www.kuwo.cn",
+      "www.qie.tv",
+      "www.soku.com",
+      "www.tudou.com",
+      "www.xiami.com",
+      "www.yinyuetai.com",
+      "www.youku.com",
+      "zb.s.qq.com",
+      "ipip.net",
+      "ipinfo.io",
+      "ifconfig.co"
+      ],
+     "type": "field", 
+     "outboundTag": "direct"
+    }
+   ], 
+   "domainStrategy": "IPIfNonMatch"
+  }, 
+  "strategy": "rules"
+ }, 
+ "dns": {
+  "servers": [
+   "8.8.8.8", 
+   "8.8.4.4", 
+   "localhost"
+  ]
+ }
+}
