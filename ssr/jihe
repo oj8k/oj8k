@@ -1,0 +1,68 @@
+#!/bin/bash
+cd /root
+clear
+sleep 1
+echo -e "====================================================================================================================="
+echo
+echo -e "\t 欢迎使用 “\033[32m 妖火老司机 \033[0m” 一键ssr op综合脚本"
+echo
+echo -e "\t 我的博客:520lsj.cn\033[0m "
+echo
+echo -e "\t 妖火网:yaohuo.me  ID:35418"
+echo
+echo -e "\t 本脚本由西门吹雪、Dios、花下砂、胡歌、阿哇、普洱、幸福简单等妖友提供的脚本修改整合而成"
+echo
+echo -e "\t 只是为了方便妖友使用（如有侵权，请联系我删除 邮箱：admin@520lsj.cn）"
+echo
+echo -e "\t 感谢西门吹雪、Dios、花下砂、胡歌、普洱、阿哇、幸福简单等妖友"
+echo
+echo -e "====================================================================================================================="
+echo
+echo -e "\033[36m 1.一键搭建BBR（centos 不支持） \033[0m"
+echo
+echo -e "\033[36m 2.一键搭建Aria2\033[0m"
+echo
+echo -e "\033[36m 3.搭建多端口SSR \033[0m"
+echo
+echo -e "\033[36m 4.搭建多用户SSR \033[0m"
+echo
+echo -e "\033[36m 5.搭建多用户SS\033[0m"
+echo
+echo -e "\033[36m 6.搭建SEVPN\033[0m"
+echo
+echo -e "\033[36m 7.搭建VPNS\033[0m"
+echo
+echo -e "\033[36m 8.搭建缤纷云流控\033[0m"
+echo
+echo -e "\033[36m 9.搭建有古怪流控\033[0m"
+echo
+echo -e "\033[36m 10.搭建爱云免流控（支持CentOS 6.x） \033[0m"
+echo
+echo -e  "\033[36m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 ] 进行下一步安装！\033[0m
+ 
+ >请选择安装类型: "
+read az
+  case $az in
+    1) wget -q http://520lsj.cn/bbr && bash bbr
+       ;;
+    2) wget -q http://520lsj.cn/aria2 && bash aria2
+       ;;
+    3) wget -q http://520lsj.cn/ssrs && bash ssrs
+       ;;
+    4) wget http://520lsj.cn/ssr2.zip && unzip ssr2.zip && bash ssr2
+       ;;
+	5) wget -q http://520lsj.cn/ss && bash ss
+	   ;;
+	6) wget -q http://520lsj.cn/sevpn && bash sevpn
+	   ;;
+	7) wget -q http://520lsj.cn/vpns && bash vpns
+	   ;;
+	8) wget -q http://520lsj.cn/bfy && bash bfy
+	   ;;
+	9) wget -q http://520lsj.cn/ygg && bash ygg
+       ;;	
+	10) wget -q http://520lsj.cn/aym && bash aym
+       ;;	
+    *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
+       ;; 
+  esac
