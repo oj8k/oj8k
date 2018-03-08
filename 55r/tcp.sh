@@ -274,11 +274,8 @@ Update_Shell(){
 start_menu(){
 clear
 echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-         -- 就是爱生活 | 94ish.me --
-     支持系统 Centos 6+ / Debian 7+ / Ubuntu 14+
-     BBR魔改版不支持Debian 8
-       
-	 
+  -- 就是爱生活 | 94ish.me --
+  
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
 ————————————内核管理————————————
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR/BBR魔改版内核
