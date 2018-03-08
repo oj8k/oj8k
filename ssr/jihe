@@ -38,6 +38,8 @@ echo -e "\033[36m 9.搭建有古怪流控\033[0m"
 echo
 echo -e "\033[36m 10.搭建爱云免流控（支持CentOS 6.x） \033[0m"
 echo
+echo -e "\033[36m 11.一键测试系统bench.sh \033[0m"
+echo
 echo -e  "\033[36m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 ] 进行下一步安装！\033[0m
  
  >请选择安装类型: "
@@ -62,7 +64,9 @@ read az
 	9) wget -q http://520lsj.cn/ygg && bash ygg
        ;;	
 	10) wget -q http://520lsj.cn/aym && bash aym
-       ;;	
+       ;;
+       	11) wget -qO- bench.sh | bash 
+       ;;
     *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
        ;; 
   esac
