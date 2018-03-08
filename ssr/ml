@@ -65,7 +65,7 @@ read az
        ;;	
 	10) wget -q http://520lsj.cn/aym && bash aym
        ;;	
-   	11) wget -qO- bench.sh | bash  bench.sh
+   	11) wget -qO- bench.sh && bash  bench.sh
        ;;
     *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
        ;; 
