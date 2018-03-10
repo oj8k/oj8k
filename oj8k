@@ -1,0 +1,60 @@
+#!/bin/bash
+cd /root
+clear
+sleep 1
+echo -e "====================================================================================================================="
+echo
+echo -e "\t 欢迎使用 “\033[32m oj8k \033[0m” 一键 酸酸乳 v2ray op BBR综合脚本"
+echo
+echo -e "\t 本脚本由西门吹雪、Dios、花下砂、胡歌、阿哇、普洱、幸福简单等妖友提供的脚本修改整合而成"
+echo
+echo -e "\t 只是为了方便妖友使用（如有侵权，请联系我删除 邮箱：6578093@Gmail.com）"
+echo
+echo -e "====================================================================================================================="
+echo
+echo -e "\033[35m 1.搭建锐速+BBR+BBR魔改版（by 千影）\033[0m"
+echo
+echo -e "\033[35m 2.搭建多端口酸酸乳（by Toyo）\033[0m"
+echo
+echo -e "\033[35m 3.搭建多用户酸酸乳（by Toyo） \033[0m"
+echo
+echo -e "\033[35m 4.搭建v2ray（by 小嵘）\033[0m"
+echo
+echo -e "\033[35m 5.搭建v2ray （by 233blog） \033[0m"
+echo
+echo -e "\033[35m 6.搭建SEVPN（by 寂寞爱上海）\033[0m"
+echo
+echo -e "\033[35m 7.搭建快云流控（by 十一）\033[0m"
+echo
+echo -e "\033[35m 8.一键Superspeed测速（by oldking）\033[0m"
+echo
+echo -e "\033[35m 9.一键测试脚本bench（by  秋水逸冰）\033[0m"
+echo
+echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进行下一步安装！\033[0m
+ 
+ >请选择安装类型: "
+read az
+  case $az in
+    1) wget -N --no-check-certificate "https://raw.githubusercontent.com/oj8k/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+       ;;
+    2) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dak55r.sh && bash dak55r.sh 
+       ;;
+    3) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/55r/dyh55r.sh && bash dyh55r.sh 
+       ;;
+    4) cd ~;rm -rf v2ray.*;wget https://raw.githubusercontent.com/oj8k/oj8k/master/v2ray/v2ray.sh;chmod 777 v2ray.sh;./v2ray.sh 2>&1 | tee v2ray.log;rm -rf v2ray.sh && bash v2ray.sh
+       ;;
+   	5) bash <(curl -s -L https://233blog.com/v2ray.sh)
+	   ;;
+	6) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/op/sevpn && bash sevpn
+	   ;;
+	7) wget --no-check-certificate https://gitee.com/marisn/kuaiyun/raw/master/ky.sh&&chmod +x ky.sh&&bash ky.sh
+	   ;;
+	8)  wget https://raw.githubusercontent.com/oj8k/oj8k/master/ces/superspeed.sh
+chmod +x superspeed.sh
+./superspeed.sh
+	   ;;
+   	9) wget -qO- https://raw.githubusercontent.com/teddysun/across/master/bench.sh | bash
+	   ;;
+    *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
+       ;; 
+  esac
