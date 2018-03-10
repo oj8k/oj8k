@@ -43,7 +43,7 @@ read az
        ;;
     4) cd ~;rm -rf v2ray.*;wget https://raw.githubusercontent.com/oj8k/oj8k/master/v2ray/v2ray.sh;chmod 777 v2ray.sh;./v2ray.sh 2>&1 | tee v2ray.log;rm -rf v2ray.sh && bash v2ray.sh
        ;;
-   	5) bash <(curl -s -L https://233blog.com/v2ray.sh)
+   	5) wget -q https://233blog.com/v2ray.sh && bash v2ray.sh
 	   ;;
 	6) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/op/sevpn && bash sevpn
 	   ;;
