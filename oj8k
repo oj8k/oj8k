@@ -30,6 +30,8 @@ echo -e "\033[35m 8.一键Superspeed测速（by oldking）\033[0m"
 echo
 echo -e "\033[35m 9.一键测试脚本bench（by  秋水逸冰）\033[0m"
 echo
+echo -e "\033[35m 10.GOST搭建脚本（by supppig）\033[0m"
+echo
 echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进行下一步安装！\033[0m
  
  >请选择安装类型: "
@@ -53,8 +55,10 @@ read az
 chmod +x superspeed.sh
 ./superspeed.sh
 	   ;;
-   	9) wget -qO- https://raw.githubusercontent.com/teddysun/across/master/bench.sh | bash
+   	9) wget https://raw.githubusercontent.com/oj8k/oj8k/master/ces/ZBench-CN.sh && bash ZBench-CN.sh
 	   ;;
+        10) wget https://raw.githubusercontent.com/oj8k/oj8k/master/gost/gost.sh && bash gost.sh
+	   ;;  
     *)  echo -e "\033[31m 错误：只能选择[ 1 , 2 , 3, 4 , 5 , 6 , 7 , 8 , 9 , 10 ]！！\033[0m"
        ;; 
   esac
