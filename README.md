@@ -1,6 +1,6 @@
  
  
-      [![weibo-logo]](http://weibo.com/linpiaochen)
+   ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
  
  
  
