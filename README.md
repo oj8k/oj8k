@@ -1,3 +1,10 @@
+ 
+ 
+      [![weibo-logo]](http://weibo.com/linpiaochen)
+ 
+ 
+ 
+ 
  欢迎使用 oj8k一键 酸酸乳 v2ray op BBR综合脚本
  
  本脚本经网络搜集修改整合而成
