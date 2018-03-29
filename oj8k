@@ -8,7 +8,7 @@ echo -e "\t 欢迎使用 “\033[32m oj8k \033[0m” 一键 酸酸乳 v2ray op B
 echo
 echo -e "\t 本脚本经网络搜集修改整合而成"
 echo
-echo -e "\t 只是为了方便使用（如有侵权，请联系我删除 邮箱：6578093@Gmail.com"
+echo -e "\t 只是为了方便使用（如有侵权，请联系我删除 邮箱：6578093@Gmail.com"）
 echo
 echo -e "======================================================================================================"
 echo
@@ -26,11 +26,11 @@ echo -e "\033[35m 6.搭建SEVPN（by 寂寞爱上海）\033[0m"
 echo
 echo -e "\033[35m 7.搭建快云流控（by 十一）\033[0m"
 echo
-echo -e "\033[35m 8.一键Superspeed测速（by oldking）\033[0m"
+echo -e "\033[35m 8.Superspeed测速（by oldking）\033[0m"
 echo
 echo -e "\033[35m 9.一键测试脚本bench（by  秋水逸冰）\033[0m"
 echo
-echo -e "\033[35m 10.GOST搭建脚本（by supppig）\033[0m"
+echo -e "\033[35m 10.搭建GOST（by supppig）\033[0m"
 echo
 echo -e  "\033[35m 请选择 [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 ] 进行下一步安装！\033[0m
  
