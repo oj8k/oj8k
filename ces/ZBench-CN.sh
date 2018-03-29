@@ -6,7 +6,7 @@ if  [ ! -e '/usr/bin/wget' ]; then
     echo "Error: wget command not found. You must be install wget command at first."
     exit 1
 fi
-read -p "请输入你的服务器提供商: " Provider
+read -p "请输入你的服务器提供商（随便输）: " Provider
 
 # Check release
 if [ -f /etc/redhat-release ]; then
