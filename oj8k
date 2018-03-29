@@ -28,7 +28,7 @@ echo -e "\033[35m 7.搭建快云流控（by 十一）\033[0m"
 echo
 echo -e "\033[35m 8.Superspeed测速（by oldking）\033[0m"
 echo
-echo -e "\033[35m 9.一键测试脚本bench（by  秋水逸冰）\033[0m"
+echo -e "\033[35m 9.一键测试脚本bench（by Zench）\033[0m"
 echo
 echo -e "\033[35m 10.搭建GOST（by supppig）\033[0m"
 echo
