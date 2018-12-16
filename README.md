@@ -12,10 +12,9 @@
  
  
     
-    wget http://oj8k.ml/oj8k && bash oj8k
-    
-      
- 
+   
+     bash <(curl -s -L oj8k.ml/oj8k)
+
  
  
  
