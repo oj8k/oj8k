@@ -24,7 +24,7 @@ echo -e "\033[35m 5.搭建v2ray （by 233blog） \033[0m"
 echo
 echo -e "\033[35m 6.搭建SEVPN（by 寂寞爱上海）\033[0m"
 echo
-echo -e "\033[35m 7.搭建快云流控（by 十一）\033[0m"
+echo -e "\033[35m 7.搭建快云流控（by Dxy修复版）\033[0m"
 echo
 echo -e "\033[35m 8.Superspeed测速（by oldking）\033[0m"
 echo
