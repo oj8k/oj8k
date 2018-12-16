@@ -1,1 +1,1 @@
-wget --no-check-certificate https://coding.net/u/q623549199/p/ky/git/raw/master/ky.sh&&chmod +x ky.sh&&bash ky.sh
+wget --no-check-certificate https://raw.githubusercontent.com/oj8k/oj8k/master/kyop/ky.sh&&chmod +x ky.sh&&bash ky.sh
