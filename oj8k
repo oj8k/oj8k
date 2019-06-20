@@ -49,7 +49,7 @@ read az
 	   ;;
 	6) wget -q https://raw.githubusercontent.com/oj8k/oj8k/master/op/sevpn && bash sevpn
 	   ;;
-	7) wget --no-check-certificate https://oj8k.ml/kyop/ky.sh&&chmod +x ky.sh&&bash ky.sh
+	7) wget --no-check-certificate https://raw.githubusercontent.com/oj8k/oj8k/master/kyop/ky.sh&&chmod +x ky.sh&&bash ky.sh
 	   ;;
 	8)  wget https://raw.githubusercontent.com/oj8k/oj8k/master/ces/superspeed.sh
 chmod +x superspeed.sh
