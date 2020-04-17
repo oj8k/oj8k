@@ -10,10 +10,10 @@
 
  只是为了方便使用（如有侵权，请联系我删除 邮箱：6578093@Gmail.com）
  
- 
+
     
    
-     bash <(curl -s -L oj8k.ml/oj8k)
+     bash <(curl -s -L raw.githubusercontent.com/oj8k/oj8k/master/oj8k)
 
  
  
