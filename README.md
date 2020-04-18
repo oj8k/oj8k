@@ -13,7 +13,7 @@
 
     
    
-     bash <(curl -s -L raw.githubusercontent.com/oj8k/oj8k/master/oj8k)
+     bash <(curl -s -L panzz.ml/oj8k)
 
  
  
