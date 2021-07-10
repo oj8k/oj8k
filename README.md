@@ -1,7 +1,7 @@
   
   
   
-   ![](http://img.ixiumei.com/uploadfile/2018/0123/20180123113638601.png ) 
+ 
  
  
  欢迎使用 oj8k一键 酸酸乳 v2ray op BBR综合脚本
@@ -13,8 +13,7 @@
 
     
    
-     bash <(curl -s -L panzz.ml/oj8k)
-
+     bash <(curl -s -L www.sswa.ml//oj8k)
  
  
  
